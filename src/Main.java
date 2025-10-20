@@ -9,13 +9,18 @@ public class Main {
         new Cliente("Ramon",c1),
         new Cliente("Juanjo",c1),
         new Cliente("Pepe",c1),
-        new Cliente("Manuel",c1)};
+        new Cliente("Manuel",c1)
+        };
 
         Cliente[] clientes2={
         new Cliente("Ramona",c2),
         new Cliente("Larry",c2),
         new Cliente("Manuela",c2),
-        new Cliente("Ana",c2)};
+        new Cliente("Ana",c2)
+        };
+//Pasar el array al cajero si no error
+        Cajero.setClientes1(clientes1);
+        Cajero.setClientes2(clientes2);
 //Añadirlos a array?
 
         System.out.println("Comienzo!");

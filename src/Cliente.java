@@ -10,14 +10,14 @@ this.cajero=cajero;
 @Override
 public void  run(){
     int tiempoEspera=(int)(Math.random() *5500)+500;
-int tiempoReducido=(int)(tiempoEspera *0.1);
-    System.out.println(nombre +"esta en el cajero"+ cajero.getCajero());
+//int tiempoReducido=(int)(tiempoEspera *0.1);
+    System.out.println(nombre +" está en el cajero "+ cajero.getCajero());
     try {
-        Thread.sleep(tiempoReducido);
+        Thread.sleep(tiempoEspera);
     } catch (InterruptedException e) {
         throw new RuntimeException(e);
     }
-    System.out.println(nombre +"terminó de pagar en"+ cajero.getCajero()+"!");
+    System.out.println(nombre +" terminó de pagar en "+ cajero.getCajero()+"!");
 
 
 }
